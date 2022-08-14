@@ -1,0 +1,44 @@
+############################################
+COMPILAÇÃO:
+$ python -m virtualenv venv
+$ venv\Scripts\activate
+$ pip install django
+$ django-admin startproject "nome project"
+$ cd "pasta 'nome projeto'"
+$ python manage.py runserver
+$ 
+
+############################################
+NA CRIAÇÃO DO PROJETO
+$ django-admin startapp "nome aplicação"
+
+############################################
+NO PROJETO
+<ProjetoFinal/settings.py - Installed_apps: Adicione
+'home.apps.HomeConfig', |Adapte esse codigo|
+
+<Home/views.py 
+def index(request):
+  return render(request, 'index.html')
+
+<Home 
+//Criar pasta templates
+//Criar arquivos HTML,CSS,JS
+//Criar arquivo urls.py
+
+<Home/urls
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index),
+]
+
+<ProjetoFinal/urls.py 
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('', include('Home.urls')),
+    path('admin/', admin.site.urls),
+]
