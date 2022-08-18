@@ -1,5 +1,5 @@
 
-  (function ($) {
+  $(document).ready(function() {
   
   "use strict";
 
@@ -28,4 +28,4 @@
       dots: true,
     });
     
-  })(window.jQuery);
+  })

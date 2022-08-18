@@ -15,7 +15,7 @@
 
         <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
 
-        <link href="{% static 'https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
@@ -23,16 +23,16 @@
         <link rel="stylesheet" href="{% static 'css/slick.css' %}"/>
 
         <link href="{% static 'css/tooplate-little-fashion.css' %}" rel="stylesheet">
-        
+        <script src="{%  static  'bootstrap/js/jquery.min.js'  %} "></script>
     </head>
     
     <body>
 
-        {% comment %} <section class="preloader">
+        <section class="preloader">
             <div class="spinner">
                 <span class="sk-inner-circle"></span>
             </div>
-        </section> {% endcomment %}
+        </section> 
       
         {% include 'header.html' %}
     
@@ -46,12 +46,12 @@
 
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Headroom.js"></script>
-        <script src="js/jQuery.headroom.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{%  static  'js/jquery.min.js'  %} "></script>
+        <script src="{%  static  'js/bootstrap.bundle.min.js'  %} "></script>
+        <script src="{%  static  'js/Headroom.js' %}"></script>
+        <script src="{%  static  'js/jQuery.headroom.js' %}"></script>
+        <script src="{%  static  'js/slick.min.js' %} "></script>
+        <script src="{%  static  'js/custom.js' %}"></script>
 
     </body>
 </html>
