@@ -41,13 +41,11 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'bootstrap',
     'fontawesome',
-    'index.apps.IndexConfig',
     'contact.apps.ContactConfig',
     'about.apps.AboutConfig',
     'products.apps.ProductsConfig',
     'faq.apps.FaqConfig',
     'product_detail.apps.ProductDetailConfig',
-    'sign_in.apps.SignInConfig',
     'sign_up.apps.SignUpConfig',
 ]
 
