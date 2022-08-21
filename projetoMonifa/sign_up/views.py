@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 
+from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .models import Customer
-from .forms import CustomerForm
+from .forms import CustomerForm, CustomerUpdateForm
 
 # Create your views here.
 def sign_up(request):
@@ -32,6 +34,7 @@ def sign_in(request):
       messages.info(request, 'Username OR password is incorrect')
 
   context = {}
+  context['db'] = User.objects.all()
   return render(request, 'sign-in.html', context)
 
 def sign_out(request):
@@ -48,26 +51,35 @@ def create(request):
 
     return redirect('/sign_in/')
 
-# def view(request, pk):
-#   data = {}
-#   data['db'] = Customer.objects.get(pk=pk)
-#   return render(request, '#', data)
+def view(request, pk):
+  data = {}
+  data['db'] = User.objects.get(id=pk)
+  return render(request, 'view.html', data)
 
-# def edit(request, pk):
-#   data = {}
-#   data['db'] = Customer.objects.get(pk=pk)
-#   data['formu'] = CustomerForm(instance=data['db'])
-#   return render(request, '#', data)
+def edit(request, pk):
+  form = CustomerUpdateForm()
+  if request.user.is_authenticated:
+    if request.method == 'POST':
+      form = CustomerUpdateForm(request.POST, instance=request.user)
+      if form.is_valid():
+        messages.success(request, 'Profile Updated!!!')
+        form.save()
+    else:
+      form = CustomerUpdateForm(instance=request.user)
 
-# def update(request, pk):
-#   data = {}
-#   data['db'] = Customer.objects.get(pk=pk)
-#   form = CustomerForm(request.POST or None, instance=data['db'])
-#   if form.is_valid():
-#     form.save()
-#   return redirect('/')
+  return render(request, 'edit.html' , {'formu':form})
 
-# def delete(request, pk):
-#   db = Customer.objects.get(pk=pk)
-#   db.delete()
-#   return redirect('/')
+def delete(request, pk):
+  db = User.objects.get(pk=pk)
+  db.delete()
+  return redirect('/')
+
+def db(request):
+  data = {}
+  search = request.GET.get('search')
+
+  if search:
+    data['db'] = User.objects.filter(username__icontains=search)
+  else:
+    data['db'] = User.objects.all()
+  return render(request, 'db.html', data)
