@@ -1,0 +1,268 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block titulo %}
+  Página inicial
+{% endblock %}
+
+{% block conteudo %}
+    <section class="slick-slideshow">   
+        <div class="slick-custom">
+            <img src="{% static 'images/slideshow/medium-shot-business-women-high-five.png'%} " class="img-fluid" alt="">
+            <div class="slick-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-10">
+                            <h1 class="slick-title">Tudo o que você quer mostrar em um toque</h1>
+
+                            <p class="lead text-white mt-lg-3 mb-lg-5">Junte-se a nossa comunidade e compartilhe tudo o que você cria, gosta e vende online. Tudo em um simples toque</p>
+
+                            <a href="/contact/" class="btn custom-btn">Comece gratuitamente</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slick-custom">
+            <img src="{% static 'images/slideshow/team-meeting-renewable-energy-project.png' %}" class="img-fluid" alt="">
+
+            <div class="slick-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-10">
+                            <h1 class="slick-title">Crie e personalize seu cartão de visitas</h1>
+
+                            <p class="lead text-white mt-lg-3 mb-lg-5">Conecte suas redes sociais, site, loja, vídeos, música, podcast, eventos e muito mais. Tudo se reúne em um link na bio e em um unico cartão de visitas.</p>
+
+                            <a href="/product/" class="btn custom-btn">Explore os Produtos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slick-custom">
+            <img src="{% static 'images/slideshow/two-business-partners-working-together-office-computer.png' %}" class="img-fluid" alt="">
+
+            <div class="slick-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-10">
+                            <h1 class="slick-title">Rápido, amigável e poderoso.</h1>
+
+                            <p class="lead text-white mt-lg-3 mb-lg-5">Personalize seu Link  e seu cartão de visitas para combinar com sua marca. Faça seu publico se conectar como você online e fisicamente.</p>
+
+                            <a href="/contact/" class="btn custom-btn">Explore os planos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="featured-product section-padding">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 text-center">
+                    <h2 class="mb-5">Produtos em destaque</h2>
+                </div>
+
+                <div class="col-lg-4 col-12 mb-3">
+                    <div class="product-thumb">
+                        <a href="/product_detail/">
+                            <img src="{% static 'images/product/evan-mcdougall-qnh1odlqOmk-unsplash.png' %}" class="img-fluid product-image" alt="">
+                        </a>
+
+                        <div class="product-top d-flex">
+                            <span class="product-alert me-auto">cartão</span>
+
+                            <a href="#" class="bi-heart-fill product-icon"></a>
+                        </div>
+
+                        <div class="product-info d-flex">
+                            <div>
+                                <h5 class="product-title mb-0">
+                                    <a href="/product_detail/" class="product-title-link">Cartão NFC</a>
+                                </h5>
+
+                                <p class="product-p">Cartão de visita personalizado</p>
+                            </div>
+
+                            <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12 mb-3">
+                    <div class="product-thumb">
+                        <a href="/product_detail/">
+                            <img src="{% static 'images/product/jordan-nix-CkCUvwMXAac-unsplash.png' %}" class="img-fluid product-image" alt="">
+                        </a>
+
+                        <div class="product-top d-flex">
+                            <span class="product-alert">Cracha NFC</span>
+
+                            <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                        </div>
+
+                        <div class="product-info d-flex">
+                            <div>
+                                <h5 class="product-title mb-0">
+                                    <a href="/product_detail/" class="product-title-link">Cracha NFC</a>
+                                </h5>
+
+                                <p class="product-p">Cracha NFC personalizado</p>
+                            </div>
+
+                            <small class="product-price text-muted ms-auto mt-auto mb-5">$35</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="product-thumb">
+                        <a href="/product_detail/">
+                            <img src="{% static 'images/product/nature-zen-3Dn1BZZv3m8-unsplash.png' %}" class="img-fluid product-image" alt="">
+                        </a>
+
+                        <div class="product-top d-flex">
+                            <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                        </div>
+                        
+                        <div class="product-info d-flex">
+                            <div>
+                                <h5 class="product-title mb-0">
+                                    <a href="/product_detail/" class="product-title-link">Chaveiro NFC</a>
+                                </h5>
+
+                                <p class="product-p">Chaveiro NFC personalizado</p>
+                            </div>
+
+                            <small class="product-price text-muted ms-auto mt-auto mb-5">$45</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <a href="/products/" class="btn custom-btn">Ver todos os produtos</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 text-center">
+                    <h2 class="mb-5">Comece com a <span>Monifa</span> NFC</h2>
+                </div>
+
+                <div class="col-lg-2 col-12 mt-auto mb-auto">
+                    <ul class="nav nav-pills mb-5 mx-auto justify-content-center align-items-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Nossos Temas</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="false">Nossas Planos</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-10 col-12">
+                    <div class="tab-content mt-2" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <img src="{% static 'images/temas-conect-temas.png' %}" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="col-lg-5 col-12">
+                                    <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                        <h4 class="mb-3">Temas <span>Ideais</span> <br>Para sua marca</h4>
+
+                                        <p>Escolha seu modelo de cartão de visita e conecte seu link em sua bio, é o designer que combina com você e te conecta com  o mundo <br>Acesse agora e aproveite: <b><a href="sign-in.html">Logar</a> / <a href="sign-up.html">Cadastrar</a></b></p>
+                                        <a href="/products/" class="btn custom-btn">Explore os Temas</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="tab-pane fade" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <img src="{% static 'images/planos-conect-planos.png' %}" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="col-lg-5 col-12">
+                                    <div class="d-flex flex-column h-100 ms-lg-4 mt-lg-0 mt-5">
+                                        <h4 class="mb-3">Conheça nossos planos</h4>
+
+                                        <p>Conheça o Plano que mais parece com você e com o que vc faz, escolha o melhor tema e tenha produtos que se encaixam com sua marca</p>
+
+                                        <div class="skill-thumb mt-3">
+
+                                            <strong>Plano pessoal</strong>
+                                                <span class="float-end">50% desconto</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                                    </div>
+
+                                            <strong>Plano empresarial</strong>
+                                                <span class="float-end">70% desconto</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                                    </div>
+
+                                        </div>
+                                        
+                                        <a href="/contact/" class="btn custom-btn">Explore os Planos</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="front-product">
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-12">
+                    <img src="{% static 'images/retail-shop-owner-mask-social-distancing-shopping.png' %}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="px-5 py-5 py-lg-0">
+                        
+                        <h2 class="mb-4"><span>Nossos</span> Desenvolvedores</h2>
+
+                        <p class="lead mb-4">Conheça nossa equipe que trabalhou muito para realizar esse trabalho.</p>
+
+                        <a href="/about/" class="btn custom-btn">Sobre nos</a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+{% endblock %}

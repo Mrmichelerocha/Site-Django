@@ -1,0 +1,102 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block titulo %}
+  Página Produtos
+{% endblock %}
+
+{% block conteudo %}
+        <main>
+            <section class="products section-padding">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <h2 class="mb-5">O melhor do mercado</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="/product_detail/">
+                                    <img src="{% static 'images/product/evan-mcdougall-qnh1odlqOmk-unsplash.png' %}" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <span class="product-alert me-auto">Cartão NFC</span>
+
+                                    <a href="#" class="bi-heart-fill product-icon"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="/product_detail/" class="product-title-link">Cartão NFC</a>
+                                        </h5>
+
+                                        <p class="product-p">Customize seu cartão</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$25</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="/product_detail/">
+                                    <img src="{% static 'images/product/jordan-nix-CkCUvwMXAac-unsplash.png' %}" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <span class="product-alert">Cracha NFC</span>
+
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="/product_detail/" class="product-title-link">Cracha NFC</a>
+                                        </h5>
+
+                                        <p class="product-p">Customize seu cracha</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$35</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="product-thumb">
+                                <a href="/product_detail/">
+                                    <img src="{% static 'images/product/nature-zen-3Dn1BZZv3m8-unsplash.png' %}" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="/product_detail/" class="product-title-link">Chaveiro NFC</a>
+                                        </h5>
+
+                                        <p class="product-p">Costomize seu chaveiro</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$45</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+{% endblock %}
