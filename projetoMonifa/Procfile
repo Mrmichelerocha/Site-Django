@@ -1,1 +1,1 @@
-web: gunicorn projetoMonifa.wsgi
+web: gunicorn projetoMonifa.wsgi --log-file -
