@@ -4,8 +4,7 @@
 Este projeto foi feito para ser um site comercial
 
 
-![WhatsApp Image 2022-12-17 at 12 16 29](https://user-images.githubusercontent.com/93664169/208251842-c62c0bca-8484-443b-a7c0-362c125fdebc.jpeg)
-
+![WhatsApp Image 2022-12-17 at 13 30 47](https://user-images.githubusercontent.com/93664169/208251987-37c2dc45-351b-4609-88d4-36b4c6a7408d.jpeg)
 
 
 # MyBudget
